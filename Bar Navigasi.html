@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #00bcd4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pkn.html">PKN</a>
+        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    </header>
+
+    <h1>Ini adalah Halaman Bahasa Indonesia</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Dalam pelajaran Bahasa Indonesia, saya belajar tentang:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <p>1. <strong>Tata Bahasa</strong>: Mempelajari struktur kalimat, kata benda, kata kerja, dan aturan tata bahasa lainnya.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>2. <strong>Membaca dan Menulis</strong>: Mengembangkan kemampuan membaca pemahaman dan menulis esai, cerpen, atau puisi.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>3. <strong>Teks resensi</strong>: Analisa teks resensi</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>4. <strong>Ejaan dan Tanda Baca</strong>: Analisa teks resensi.</p> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>5. <strong>Berbicara dan Presentasi</strong>: Melatih keterampilan berbicara dan presentasi dengan bahasa yang baik dan benar.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
