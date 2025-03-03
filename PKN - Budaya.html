@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKN - Budaya</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #00bcd4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="agama.html">Agama</a>
+        <a href="pkn.html">PKN</a>
+        <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+    </header>
+
+    <h1>Ini adalah Halaman PKN - Budaya</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Dalam pelajaran PKN, budaya memainkan peran penting dalam membentuk identitas nasional dan kewarganegaraan. Berikut adalah beberapa aspek yang dipelajari:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <p>1. <strong>Budaya sebagai Identitas Nasional</strong>: Budaya adalah salah satu pilar utama yang membentuk identitas suatu bangsa. Melalui PKN, kita belajar bagaimana budaya lokal dan nasional berkontribusi pada pembentukan karakter bangsa.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>2. <strong>Keragaman Budaya</strong>: Indonesia dikenal dengan keragaman budayanya. PKN mengajarkan pentingnya menghargai dan melestarikan keragaman budaya sebagai bagian dari kekayaan bangsa.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>3. <strong>Budaya dan Pancasila</strong>: Pancasila sebagai dasar negara memiliki nilai-nilai yang sejalan dengan budaya Indonesia. PKN membantu kita memahami bagaimana nilai-nilai Pancasila tercermin dalam budaya sehari-hari.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>4. <strong>Peran Budaya dalam Pembangunan Nasional</strong>: Budaya tidak hanya sebagai warisan, tetapi juga sebagai alat untuk memajukan bangsa. PKN membahas bagaimana budaya dapat digunakan untuk mempromosikan persatuan dan kemajuan nasional.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p>5. <strong>Budaya dan Globalisasi</strong>: Dalam era globalisasi, PKN mengajarkan bagaimana mempertahankan budaya lokal sambil tetap terbuka terhadap pengaruh global, tanpa kehilangan identitas nasional.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
